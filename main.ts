@@ -1,7 +1,6 @@
-import BubbleSort from './src/BubbleSort';
-import SelectionSort from './src/SelectionSort';
+import BubbleSort from '@/src/BubbleSort';
+import SelectionSort from '@/src/SelectionSort';
 
-// TODO: 显示每一次遍历后的数组
 /*
  * 生成随机数组
  * 实例化sort, 并且同时传入随机数组参数
@@ -12,6 +11,7 @@ console.log(`排序前: ${array.join()}`);
 
 const bubbleSort = new BubbleSort(array);
 const selectionSort = new SelectionSort(array);
+
 bubbleSort.sort();
 selectionSort.sort();
 

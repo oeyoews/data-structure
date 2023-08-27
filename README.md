@@ -11,6 +11,7 @@ TypeScript + Data Structure
 
 ## TODO
 
+- [ ] 可视化排序步骤
 - [ ] 完成十大排序算法
 - [ ] 使用 NextJs 构建项目文档网站, 支持在线预览代码
 
