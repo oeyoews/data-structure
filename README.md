@@ -33,5 +33,6 @@ pnpm run dev  # running 入口文件是项目根目录的 main.ts 文件
 ## Credits
 
 * https://github.com/likaia/JavaScript-test
+* https://juejin.cn/post/6860501233308794887
 
 <small>写于2023/08/27, 此仓库代码仅供学习参考</small>
