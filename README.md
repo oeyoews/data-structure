@@ -16,7 +16,7 @@ TypeScript + Data Structure
 ```bash
 git clone --depth 1 https://github.com/oeyoews/data-structure.git  # clone repo
 pnpm install  # install dependencies
-pnpm run dev  # running 入口文件是项目根目录的main.ts 文件
+pnpm run dev  # running 入口文件是项目根目录的 main.ts 文件
 ```
 
 
