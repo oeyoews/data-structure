@@ -1,0 +1,16 @@
+{
+  "name": "data-structure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx main.ts"
+  },
+  "keywords": [],
+  "author": "oeyoews <jyao4783@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^3.0.2",
+    "tsx": "^3.12.7"
+  }
+}
