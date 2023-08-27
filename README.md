@@ -8,6 +8,16 @@ TypeScript + Data Structure
 * 使用ts规范代码
 * 使用prettier格式代码
 * 分离每一个算法为单个文件
+* 使用pnpm 安装依赖
+
+## Usage 
+
+```bash
+git clone --depth 1 https://github.com/oeyoews/data-structure.git  # clone repo
+pnpm install  # install dependencies
+pnpm run dev  # running
+```
+
 
 ## TODO
 
