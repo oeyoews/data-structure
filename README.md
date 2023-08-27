@@ -6,6 +6,7 @@ TypeScript + Data Structure
 
 * 提供数据测试算法
 * 使用ts规范代码
+* 使用tsx直接运行ts文件
 * 使用prettier格式代码
 * 分离每一个算法为单个文件
 * 使用pnpm 安装依赖
@@ -15,7 +16,7 @@ TypeScript + Data Structure
 ```bash
 git clone --depth 1 https://github.com/oeyoews/data-structure.git  # clone repo
 pnpm install  # install dependencies
-pnpm run dev  # running
+pnpm run dev  # running 入口文件是项目根目录的main.ts 文件
 ```
 
 
