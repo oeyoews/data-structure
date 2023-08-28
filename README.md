@@ -22,8 +22,8 @@ pnpm run dev  # running 入口文件是项目根目录的 main.ts 文件
 
 ## TODO
 
-- [ ] 可视化排序步骤
 - [ ] 完成十大排序算法
+- [ ] 使用prompt自动提示验正那种排序算法
 - [ ] 使用 NextJs 构建项目文档网站, 支持在线预览代码
 
 ## Editor

@@ -1,4 +1,5 @@
 import { Compare, defaultCompare } from '@/utils/Util';
+import chalk from 'chalk';
 
 /*
  * 排列顺序: 升序(从小到大)
@@ -48,7 +49,18 @@ export default class SelectionSort<T> {
         this.swap(array, currentIndex, minIndex);
       }
 
-      console.log(`第${currentIndex + 1}次遍历: ${array.join()}`);
+      // 使用chalk为不同的数字添加不同的颜色
+      const coloredArray = array.map((num, index) => {
+        switch (true) {
+          case index === minIndex:
+            return chalk.red(num);
+          case index === currentIndex:
+            return chalk.green(num);
+          default:
+            return num;
+        }
+      });
+      console.log(`第${currentIndex + 1}次遍历: ${coloredArray.join()}`);
     }
   }
 
