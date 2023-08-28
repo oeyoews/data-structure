@@ -37,6 +37,8 @@ export default class BubbleSort<T> {
           this.swap(array, elementIndex, elementIndex + 1);
         }
       }
+
+      console.log(`第${currentRound + 1}次遍历: ${array.join()}`);
     }
   }
   /*

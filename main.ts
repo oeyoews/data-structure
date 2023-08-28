@@ -14,7 +14,7 @@ console.log(`排序前: ${array.join()}`);
 const bubbleSort = new BubbleSort(array);
 const selectionSort = new SelectionSort(array);
 
-bubbleSort.sort();
+// bubbleSort.sort();
 selectionSort.sort();
 
 /*
