@@ -1,4 +1,5 @@
 ## 数据结构
+![snapshot](./snapshot.png)
 
 TypeScript + Data Structure
 
@@ -33,7 +34,7 @@ pnpm run dev  # running 入口文件是项目根目录的 main.ts 文件
   1. [冒泡排序](./src/BubbleSort.ts)
   2. 快速排序
 * 选择排序(2)
-  1. 简单选择排序
+  1. [简单选择排序](./src/SelectionSort.ts)
   2. 堆排序
 * 归并排序
 * 基数排序
