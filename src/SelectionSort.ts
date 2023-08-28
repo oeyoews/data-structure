@@ -61,9 +61,6 @@ export default class SelectionSort<T> {
     }
   }
 
-  /*
-   * swap function
-   */
   private swap = (array: T[], current: number, next: number) => {
     const temp = array[current];
     array[current] = array[next];

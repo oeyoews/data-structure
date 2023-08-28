@@ -1,5 +1,8 @@
 ## 数据结构
-![snapshot](./snapshot.png)
+
+![snapshot](./snapshot.png "snapshot")
+
+[//]: # (&#40;图片由TinySnap + pngquang 处理&#41;)
 
 TypeScript + Data Structure
 
@@ -16,7 +19,7 @@ TypeScript + Data Structure
 * 分离每一个算法为单个文件
 * 使用 pnpm 安装依赖
 
-## Usage 
+## Usage
 
 ```bash
 git clone --depth 1 https://github.com/oeyoews/data-structure.git  # clone repo
@@ -32,7 +35,7 @@ pnpm run dev  # running 入口文件是项目根目录的 main.ts 文件
   3. 希尔排序
 * 交换排序(2)
   1. [冒泡排序](./src/BubbleSort.ts)
-  2. 快速排序
+  2. [快速排序](./src/QuickSort.ts)
 * 选择排序(2)
   1. [简单选择排序](./src/SelectionSort.ts)
   2. 堆排序

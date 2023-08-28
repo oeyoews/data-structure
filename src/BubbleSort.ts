@@ -50,9 +50,7 @@ export default class BubbleSort<T> {
       console.log(`第${currentRound + 1}次遍历: ${coloredUnsortPart.join()}`);
     }
   }
-  /*
-   * swap function
-   */
+
   private swap = (array: T[], current: number, next: number) => {
     const temp = array[current];
     array[current] = array[next];
