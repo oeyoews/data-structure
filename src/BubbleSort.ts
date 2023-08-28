@@ -1,4 +1,5 @@
 import { Compare, defaultCompare } from '@/utils/Util';
+import chalk from 'chalk';
 
 /*
  * 排列顺序: 升序(从小到大)
@@ -37,8 +38,15 @@ export default class BubbleSort<T> {
           this.swap(array, elementIndex, elementIndex + 1);
         }
       }
-
-      console.log(`第${currentRound + 1}次遍历: ${array.join()}`);
+      const coloredUnsortPart = array.map((num, index) => {
+        switch (true) {
+          case index >= length - 1 - currentRound:
+            return chalk.green(num);
+          default:
+            return num;
+        }
+      });
+      console.log(`第${currentRound + 1}次遍历: ${coloredUnsortPart.join()}`);
     }
   }
   /*

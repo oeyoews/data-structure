@@ -55,7 +55,7 @@ export default class SelectionSort<T> {
           case index === minIndex:
             return chalk.red(num);
           case index === currentIndex:
-            return chalk.green(num);
+            return chalk.green.bold.underline(num);
           default:
             return num;
         }
