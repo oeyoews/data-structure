@@ -9,7 +9,7 @@ TypeScript + Data Structure
 * 使用tsx直接运行ts文件
 * 使用prettier格式代码
 * 分离每一个算法为单个文件
-* 使用pnpm 安装依赖
+* 使用 pnpm 安装依赖
 
 ## Usage 
 
