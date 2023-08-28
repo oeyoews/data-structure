@@ -2,9 +2,12 @@ import { Compare, defaultCompare } from '@/utils/Util';
 import chalk from 'chalk';
 
 /*
- * 排列顺序: 升序(从小到大)
- * 排序主要是数组元素位置之间的交换
- * 注意: 算法中的变量写成i,j有助于提高书写速度, 但是对理解算法丝毫没有帮助, 即使很简单, 自己也要回想i,j的变量表示什么含义, 这真的不符合程序的书写规, 建议自己练习的时候语义化变量名
+ * 选择排序:
+ *  1. 思路:
+ *        选择排序是一种原址比较排序算法， 它的大致思路是找到数据结构中的最小值并将其放置在第一位，
+ *        接着找到第二小的值将其放在第二位，依次类推
+ *  2. 每轮找到最小元素的index, 然后交换元素
+ *  3. 规律: 第一次遍历之后, 第一位数字是有序的
  */
 export default class SelectionSort<T> {
   constructor(
@@ -12,12 +15,6 @@ export default class SelectionSort<T> {
     private compareFn: ICompareFunction<T> = defaultCompare,
   ) {}
 
-  /*
-   * 选择排序:
-   *  1. 双重for循环: ...;
-   *  2. 每轮找到最小元素index, 然后交换元素
-   *  6. 第一次遍历之后, 第一位数字是有序的
-   */
   getSortName() {
     return '排序算法: 选择排序';
   }

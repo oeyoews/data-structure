@@ -19,6 +19,20 @@ pnpm install  # install dependencies
 pnpm run dev  # running 入口文件是项目根目录的 main.ts 文件
 ```
 
+## 排序算法
+
+* 插入排序(3)
+  1. [直接插入排序](./src/InsertionSort.ts)
+  2. 折半插入排序
+  3. 希尔排序
+* 交换排序(2)
+  1. [冒泡排序](./src/BubbleSort.ts)
+  2. 快速排序
+* 选择排序(2)
+  1. 简单选择排序
+  2. 堆排序
+* 归并排序
+* 基数排序
 
 ## TODO
 

@@ -1,5 +1,6 @@
 import BubbleSort from '@/src/BubbleSort';
 import SelectionSort from '@/src/SelectionSort';
+import InsertionSort from '@/src/InsertionSort';
 
 /*
  * 生成随机数组
@@ -13,9 +14,11 @@ console.log(`排序前: ${array.join()}`);
  */
 const bubbleSort = new BubbleSort(array);
 const selectionSort = new SelectionSort(array);
+const insertionSort = new InsertionSort(array);
 
 // bubbleSort.sort();
-selectionSort.sort();
+// selectionSort.sort();
+insertionSort.sort();
 
 /*
  * 输出排序后的数组
