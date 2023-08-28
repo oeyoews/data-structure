@@ -1,5 +1,4 @@
 import { Compare, defaultCompare } from '@/utils/Util';
-import chalk from 'chalk';
 
 /*
  * 插入排序会将数组分为已排序区域和未排序区域，将未排序区域的数组项和已排序区域的数组进行大小比较，确立要插入的位置，

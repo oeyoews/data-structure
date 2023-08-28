@@ -2,6 +2,10 @@
 
 TypeScript + Data Structure
 
+## 为什么使用 TypeScript 呢
+
+每个人都喜欢使用自己擅长的方式写代码,不是吗
+
 ## Feature
 
 * 提供数据测试算法
