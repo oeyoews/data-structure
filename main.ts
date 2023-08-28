@@ -17,6 +17,7 @@ console.log(`排序前: ${array.join()}`);
 const bubbleSort = new BubbleSort(array);
 const selectionSort = new SelectionSort(array);
 const insertionSort = new InsertionSort(array);
+// const d1 = [47, 45, 7, 10, 17];
 const quickSort = new QuickSort(array);
 
 // bubbleSort.sort();
