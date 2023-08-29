@@ -1,3 +1,5 @@
+import swap from '@/lib/swap';
+
 export default class BubbleSort {
   constructor(private array: number[] = []) {}
   sort() {
@@ -8,7 +10,7 @@ export default class BubbleSort {
       // 从后面开始冒泡, 所以j = length-1(这里从后面往前冒泡, 把大的元素放在后面)
       for (let j = length - 1; j > i; j--) {
         if (array[j - 1] > array[j]) {
-          this.swap(array, j - 1, j);
+          swap(array, j - 1, j);
           flag = true;
         }
       }
@@ -17,10 +19,5 @@ export default class BubbleSort {
         return;
       }
     }
-  }
-  private swap(array: number[], current: number, next: number) {
-    const temp = array[current];
-    array[current] = array[next];
-    array[next] = temp;
   }
 }

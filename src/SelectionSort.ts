@@ -1,3 +1,5 @@
+import swap from '@/lib/swap';
+
 export default class SelectionSort {
   constructor(private array: number[]) {}
 
@@ -10,10 +12,7 @@ export default class SelectionSort {
       for (let j = i + 1; j < length; j++) {
         // 在剩余的表中, 选择最小的元素交换
         if (array[j] < array[minIndex]) {
-          // swap method
-          temp = array[minIndex];
-          array[minIndex] = array[j];
-          array[j] = temp;
+          swap(array, j, minIndex);
         }
       }
     }
