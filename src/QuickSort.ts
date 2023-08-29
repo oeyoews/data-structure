@@ -1,78 +1,36 @@
-import { Compare, defaultCompare } from '@/utils/Util';
-
 /*
  * 双指针
+ * c 语言的ts版本
  */
 export default class QuickSort<T> {
-  constructor(
-    private array: T[] = [],
-    private compareFn: ICompareFunction<T> = defaultCompare,
-  ) {}
-
-  // 快速排序
-  sort(): T[] {
-    return this.quick(this.array, 0, this.array.length - 1);
+  constructor(private array: T[] = []) {}
+  sort() {
+    this.quickSort(this.array, 0, this.array.length - 1);
   }
-
-  /**
-   *
-   * @param array 待排序数组
-   * @param left 左边界
-   * @param right 右边界
-   * @private
-   */
-  private quick(array: T[], left: number, right: number) {
-    // 该变量用于将子数组分离为较小值数组和较大值数组
-    let index;
-    if (array.length > 1) {
-      // 对给定子数组执行划分操作，得到正确的index
-      index = this.partition(array, left, right);
-      // 如果子数组存在较小值的元素，则对该数组重复这个过程
-      if (left < index - 1) {
-        this.quick(array, left, index - 1);
-      }
-      // 如果子数组存在较大值的元素，也对该数组重复这个过程
-      if (index < right) {
-        this.quick(array, index, right);
-      }
+  quickSort(array: T[], low: number, high: number) {
+    if (low < high) {
+      // 返回的i不断进行拆分数组
+      const pivotpos = this.partition(array, low, high);
+      // 递归拆分
+      this.quickSort(array, low, pivotpos);
+      this.quickSort(array, pivotpos + 1, high);
     }
-    return array;
   }
-
-  // 划分函数
-  private partition(array: T[], left: number, right: number): number {
-    // 从数组中选择一个值做主元，此处选择数组的中间值
-    const pivot = array[left];
-    // 创建数组引用，分别指向左边数组的第一个值和右边数组的第一个值
-    let i = left;
-    let j = right;
-
-    // left指针和right指针没有相互交错，就执行划分操作
-    while (i <= j) {
-      // 移动left指针直至找到一个比主元大的元素
-      while (this.compareFn(array[i], pivot) === Compare.LESS_THAN) {
-        i++;
+  partition(array: T[], low: number, high: number) {
+    const pivot = array[low];
+    while (low < high) {
+      // 顺序很重要
+      while (low < high && array[high] >= pivot) {
+        // 双层while, 所以需要再次判断, 外层的判断在这里不起作用
+        high--;
       }
-
-      // 移动right指针直至找到一个比主元小的元素
-      while (this.compareFn(array[j], pivot) === Compare.BIGGER_THAN) {
-        j--;
+      array[low] = array[high];
+      while (low < high && array[low] <= pivot) {
+        low++;
       }
-
-      // 当左指针指向的元素比主元大且右指针指向的元素比主元小，并且左指针索引没有右指针索引大时就交换i和j号元素的位置，随后移动两个指针
-      if (i <= j) {
-        this.swap(array, i, j);
-        i++;
-        j--;
-      }
+      array[high] = array[low];
     }
-    // 划分结束，返回左指针索引
-    return i;
+    array[low] = pivot; // 关键, 有序枢纽元素
+    return low;
   }
-
-  private swap = (array: T[], current: number, next: number) => {
-    const temp = array[current];
-    array[current] = array[next];
-    array[next] = temp;
-  };
 }
