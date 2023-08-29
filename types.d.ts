@@ -3,4 +3,5 @@ type SortType =
   | 'SelectionSort'
   | 'InsertionSort'
   | 'QuickSort'
-  | 'ShellSort';
+  | 'ShellSort'
+  | 'MergeSort';

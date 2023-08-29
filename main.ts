@@ -18,9 +18,10 @@ async function promptForSortType() {
     'InsertionSort',
     'QuickSort',
     'ShellSort',
+    'MergeSort',
   ].map((sortType) => ({
     title: sortType.replace('Sort', ''),
-    value: sortType,
+    value: sortType as SortType,
   }));
 
   let selectedSortType: SortType;
