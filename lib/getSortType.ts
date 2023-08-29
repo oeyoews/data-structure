@@ -1,3 +1,3 @@
-export default function getSortType(sortType: string) {
+export default function getSortType(sortType: SortType) {
   console.log(sortType);
 }

@@ -1,14 +1,16 @@
 import swap from '@/lib/swap';
 import getSortType from '@/lib/getSortType';
+import getVanillaArray from '@/lib/getVanillaArray';
 
 export default class BubbleSort {
   constructor(private array: number[]) {}
 
   sort() {
-    getSortType('BubbleSort');
-
     const array = this.array;
     const { length } = array;
+
+    getSortType('BubbleSort');
+    getVanillaArray(array);
 
     for (let i = 0; i < length - 1; i++) {
       let flag = false;

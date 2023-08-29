@@ -1,4 +1,5 @@
 import getSortType from '@/lib/getSortType';
+import getVanillaArray from '@/lib/getVanillaArray';
 
 export default class ShellSort {
   constructor(private array: number[]) {}
@@ -11,6 +12,7 @@ export default class ShellSort {
     const { length } = array;
 
     getSortType('ShellSort');
+    getVanillaArray(array);
 
     let gap = Math.floor(length / 2);
     while (gap > 0) {

@@ -1,5 +1,6 @@
 import swap from '@/lib/swap';
 import getSortType from '@/lib/getSortType';
+import getVanillaArray from '@/lib/getVanillaArray';
 
 export default class SelectionSort {
   constructor(private array: number[]) {}
@@ -9,6 +10,7 @@ export default class SelectionSort {
     const { length } = array;
 
     getSortType('SelectionSort');
+    getVanillaArray(array);
 
     let minIndex, temp;
     for (let i = 0; i < length; i++) {

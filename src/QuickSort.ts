@@ -3,13 +3,16 @@
  * c 语言的ts版本
  */
 import getSortType from '@/lib/getSortType';
+import getVanillaArray from '@/lib/getVanillaArray';
 
 export default class QuickSort {
   constructor(private array: number[]) {}
 
   sort() {
-    this.quickSort(this.array, 0, this.array.length - 1);
+    const array = this.array;
+    this.quickSort(array, 0, array.length - 1);
     getSortType('QuickSort');
+    getVanillaArray(array);
   }
 
   quickSort(array: number[], low: number, high: number) {

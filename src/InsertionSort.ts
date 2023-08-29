@@ -1,4 +1,5 @@
 import getSortType from '@/lib/getSortType';
+import getVanillaArray from '@/lib/getVanillaArray';
 
 export default class InsertionSort {
   constructor(private array: number[]) {}
@@ -8,6 +9,7 @@ export default class InsertionSort {
     const { length } = array;
 
     getSortType('InsertionSort');
+    getVanillaArray(array);
 
     let preIndex, current;
     for (let i = 1; i < length; i++) {
