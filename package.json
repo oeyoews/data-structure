@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx main.ts"
+    "dev": "tsx src/main.ts"
   },
   "keywords": [],
   "author": "oeyoews <jyao4783@gmail.com>",

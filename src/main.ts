@@ -6,7 +6,7 @@ const DEBUG = false;
 const DEBUG_SORTTYPE = 'BubbleSort';
 
 async function sort(sortType: SortType) {
-  const module = await import(`@/src/${sortType}`);
+  const module = await import(`@/src/sorts/${sortType}`);
   new module.default(array).sort();
 }
 
@@ -16,6 +16,7 @@ async function promptForSortType() {
     'BubbleSort',
     'SelectionSort',
     'InsertionSort',
+    'BinaryInsertionSort',
     'QuickSort',
     'ShellSort',
     'MergeSort',

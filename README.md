@@ -31,16 +31,16 @@ pnpm run dev  # running 入口文件是项目根目录的 main.ts 文件
 ## 排序算法
 
 * 插入排序(3)
-  1. [直接插入排序](./src/InsertionSort.ts)
+  1. [直接插入排序](src/sorts/InsertionSort.ts)
   2. 折半插入排序
-  3. [希尔排序](./src/ShellSort.ts)
+  3. [希尔排序](src/sorts/ShellSort.ts)
 * 交换排序(2)
-  1. [冒泡排序](./src/BubbleSort.ts)
-  2. [快速排序](./src/QuickSort.ts)
+  1. [冒泡排序](src/sorts/BubbleSort.ts)
+  2. [快速排序](src/sorts/QuickSort.ts)
 * 选择排序(2)
-  1. [简单选择排序](src/SelectionSort.ts)
+  1. [简单选择排序](src/sorts/SelectionSort.ts)
   2. 堆排序 
-* 归并排序
+* [归并排序](src/sorts/MergeSort.ts)
 * 基数排序
 
 ## TODO

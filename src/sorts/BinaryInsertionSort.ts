@@ -1,15 +1,16 @@
 import getSortType from '@/lib/getSortType';
 import getVanillaArray from '@/lib/getVanillaArray';
 
-export default class MergeSort {
+export default class BinaryInsertionSort {
   constructor(private array: number[]) {}
 
-  // TODO
-  sort(arr: number[]) {
+  sort() {
     const array = this.array;
     const { length } = array;
 
-    getSortType('MergeSort');
+    getSortType('BinaryInsertionSort');
     getVanillaArray(array);
+
+    /* core */
   }
 }
