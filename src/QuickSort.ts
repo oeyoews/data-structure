@@ -2,11 +2,16 @@
  * 双指针
  * c 语言的ts版本
  */
+import getSortType from '@/lib/getSortType';
+
 export default class QuickSort {
   constructor(private array: number[]) {}
+
   sort() {
     this.quickSort(this.array, 0, this.array.length - 1);
+    getSortType('QuickSort');
   }
+
   quickSort(array: number[], low: number, high: number) {
     if (low < high) {
       // 返回的i不断进行拆分数组

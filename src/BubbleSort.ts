@@ -1,10 +1,15 @@
 import swap from '@/lib/swap';
+import getSortType from '@/lib/getSortType';
 
 export default class BubbleSort {
   constructor(private array: number[]) {}
+
   sort() {
+    getSortType('BubbleSort');
+
     const array = this.array;
     const { length } = array;
+
     for (let i = 0; i < length - 1; i++) {
       let flag = false;
       // 从后面开始冒泡, 所以j = length-1(这里从后面往前冒泡, 把大的元素放在后面)

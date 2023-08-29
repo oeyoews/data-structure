@@ -1,8 +1,13 @@
+import getSortType from '@/lib/getSortType';
+
 export default class InsertionSort {
   constructor(private array: number[]) {}
+
   sort() {
     const array = this.array;
     const { length } = array;
+
+    getSortType('InsertionSort');
 
     let preIndex, current;
     for (let i = 1; i < length; i++) {
