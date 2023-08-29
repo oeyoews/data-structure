@@ -6,7 +6,7 @@ const array = Array.from({ length: 5 }, () => Math.floor(Math.random() * 100));
 const DEBUG = false;
 const DEBUG_SORTTYPE = 'BubbleSort';
 
-// 这里的类型声明其实是不会被感知到的, 因为是动态获取
+// 这里的类型声明其实是不会被感知到的, 因为是动态获取sorts
 const allSorts = getAllSorts() as SortType[];
 
 async function sort(sortType: SortType) {

@@ -9,7 +9,8 @@ export default class MergeSort {
     const array = this.array;
     const { length } = array;
 
-    getSortType('MergeSort');
+    // getSortType('MergeSort');
+    console.log('WIP');
     getVanillaArray(array);
   }
 }

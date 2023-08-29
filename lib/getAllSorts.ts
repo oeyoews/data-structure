@@ -1,9 +1,10 @@
 import fs from 'fs';
 import path from 'path';
 
+// 这里使用同步获取, 不要使用异步
 export default function getAllSorts() {
   function getTsFiles() {
-    const directoryPath = path.join(__dirname, '../src/sorts'); // 替换为你的实际路径
+    const directoryPath = path.join(__dirname, '../src/sorts');
     const tsFiles: string[] = [];
 
     try {
