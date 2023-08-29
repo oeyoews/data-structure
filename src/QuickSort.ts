@@ -1,6 +1,5 @@
 /*
- * 双指针
- * c 语言的ts版本
+ * 双指针, 枢纽元素
  */
 import getSortType from '@/lib/getSortType';
 import getVanillaArray from '@/lib/getVanillaArray';

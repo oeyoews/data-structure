@@ -12,12 +12,13 @@ TypeScript + Data Structure
 
 ## Feature
 
-* 提供数据测试算法
-* 使用ts规范代码
+* 提供随机数据测试算法正确性
+* 使用ts规范代码书写
 * 使用tsx直接运行ts文件
+* 动态选择排序方法
 * 使用prettier格式代码
 * 分离每一个算法为单个文件
-* 使用 pnpm 安装依赖
+* 使用 pnpm 快速安装依赖
 
 ## Usage
 
@@ -45,6 +46,8 @@ pnpm run dev  # running 入口文件是项目根目录的 main.ts 文件
 ## TODO
 
 - [4/10] 完成十大排序算法
+- [ ] update snapshot
+- [ ] 完成代码注释
 - [ ] 使用 NextJs 构建项目文档网站, 支持在线预览代码
 
 ## Editor
