@@ -2,12 +2,12 @@
  * 双指针
  * c 语言的ts版本
  */
-export default class QuickSort<T> {
-  constructor(private array: T[] = []) {}
+export default class QuickSort {
+  constructor(private array: number[]) {}
   sort() {
     this.quickSort(this.array, 0, this.array.length - 1);
   }
-  quickSort(array: T[], low: number, high: number) {
+  quickSort(array: number[], low: number, high: number) {
     if (low < high) {
       // 返回的i不断进行拆分数组
       const pivotpos = this.partition(array, low, high);
@@ -16,7 +16,7 @@ export default class QuickSort<T> {
       this.quickSort(array, pivotpos + 1, high);
     }
   }
-  partition(array: T[], low: number, high: number) {
+  partition(array: number[], low: number, high: number) {
     const pivot = array[low];
     while (low < high) {
       // 顺序很重要

@@ -1,7 +1,7 @@
 import swap from '@/lib/swap';
 
 export default class BubbleSort {
-  constructor(private array: number[] = []) {}
+  constructor(private array: number[]) {}
   sort() {
     const array = this.array;
     const { length } = array;
