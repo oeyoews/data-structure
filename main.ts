@@ -1,5 +1,5 @@
 import BubbleSort from '@/src/BubbleSort';
-import SelectionSort from '@/src/ref/SelectionSort';
+import SelectionSort from '@/src/SelectionSort';
 import InsertionSort from '@/src/InsertionSort';
 import chalk from 'chalk';
 import QuickSort from '@/src/QuickSort';
@@ -15,13 +15,13 @@ console.log(`排序前: ${array.join()}`);
  * 测试
  */
 const bubbleSort = new BubbleSort(array);
-// const selectionSort = new SelectionSort(array);
+const selectionSort = new SelectionSort(array);
 const insertionSort = new InsertionSort(array);
-// const quickSort = new QuickSort(array);
+const quickSort = new QuickSort(array);
 
 // bubbleSort.sort();
-// selectionSort.sort();
-insertionSort.sort();
+selectionSort.sort();
+// insertionSort.sort();
 // quickSort.sort();
 
 /*
